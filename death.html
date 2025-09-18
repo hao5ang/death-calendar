@@ -131,7 +131,7 @@
                             }
                         }
                         var ageDesc = "<div><span class='age-icon'>" + ageIcon + "</span><span class='age-span'>age:" + age + "</span></div>";
-                        var toDeaDesc = "<div>to dea:" + toDea + "</div>";
+                        var toDeaDesc = "<div>Years Left:" + toDea + "</div>";
                         if (currentYear == year) {
                             var progress = Math.round(age / deathAge * 100);
                             if (progress < 0) {
@@ -144,11 +144,11 @@
                         }
                         if (age < 0) {
                             ageDesc = "<div>before born:" + (-age) + "</div>";
-                            toDeaDesc = "<div>to dea: - </div>"
+                            toDeaDesc = "<div>Years Left: - </div>"
                         }
                         if (toDea < 0) {
                             ageDesc = "<div>age: - </div>";
-                            toDeaDesc = "<div>🪦dead:" + (-toDea) + "</div>";
+                            toDeaDesc = "<div>🪦Deceased:" + (-toDea) + "</div>";
                         }
                         if (age == 0) {
                             yearDesc = "<div> <span class='year-class'>" + year + "</span><span class='zediac-span'>" + zodiac[year % 12] + "</span></div>";
